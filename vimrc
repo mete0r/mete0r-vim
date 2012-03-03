@@ -19,6 +19,7 @@ if has('statusline')
 	set statusline=
 	set statusline+=%-5r%f
 	set statusline+=\ %3(%#StatusLineError#%m%*%)
+	set statusline+=\ %{fugitive#statusline()}
 	set statusline+=%=
 	set statusline+=%#StatusLineError#%{SyntasticStatuslineFlag()}%*
 	set statusline+=\ %c%-3(%V%)\ %3p%%
