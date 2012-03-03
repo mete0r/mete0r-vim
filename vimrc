@@ -1,16 +1,23 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+"
+" ui coloring
+"
+hi Normal ctermfg=gray
+hi SignColumn ctermfg=none ctermbg=none
+hi Search ctermfg=cyan ctermbg=blue
+hi Folded ctermfg=darkgray ctermbg=none
+hi StatusLine cterm=none ctermfg=white ctermbg=black
+hi StatusLineNC cterm=none ctermfg=gray ctermbg=black
+hi StatusLineError ctermfg=red ctermbg=black
+
 filetype plugin indent on
 
 "
 " syntax coloring
 "
 syntax on
-hi Normal ctermfg=gray
-hi SignColumn ctermfg=none ctermbg=none
-hi Search ctermfg=cyan ctermbg=blue
-hi Folded ctermfg=darkgray ctermbg=none
 hi Statement ctermfg=darkblue
 hi Identifier ctermfg=white
 hi Constant ctermfg=darkgreen
@@ -27,9 +34,6 @@ let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
 " StatusLine with syntastic
 "
 if has('statusline')
-	hi StatusLine cterm=none ctermfg=white ctermbg=black
-	hi StatusLineNC cterm=none ctermfg=gray ctermbg=black
-	hi StatusLineError ctermfg=red ctermbg=black
 	set statusline=
 	set statusline+=%f:%l,%c
 	set statusline+=%5r%4m
