@@ -17,11 +17,11 @@ let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
 "
 if has('statusline')
 	set statusline=
-	set statusline+=%f:%l,%c
-	set statusline+=%5r%4m
+	set statusline+=%-5r%f
+	set statusline+=\ %3(%#StatusLineError#%m%*%)
 	set statusline+=%=
 	set statusline+=%#StatusLineError#%{SyntasticStatuslineFlag()}%*
-	set statusline+=%4p%%
+	set statusline+=\ %c%-3(%V%)\ %3p%%
 	set laststatus=2
 endif
 
