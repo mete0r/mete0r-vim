@@ -38,3 +38,9 @@ if has('statusline')
 	set statusline+=%4p%%
 	set laststatus=2
 endif
+
+if has("extra_search")
+	set hlsearch
+	" 노말모드에서 <ESC>로 하일라이팅 해제
+	nmap <ESC> :nohlsearch<ENTER>
+endif
