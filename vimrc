@@ -44,3 +44,8 @@ if has("extra_search")
 	" 노말모드에서 <ESC>로 하일라이팅 해제
 	nmap <ESC> :nohlsearch<ENTER>
 endif
+
+if has("windows")
+	nmap <TAB> :tabn<CR>
+	nmap <S-TAB> :tabp<CR>
+endif
