@@ -1,7 +1,20 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+filetype plugin indent on
+
+"
+" syntax coloring
+"
+syntax on
+hi Normal ctermfg=gray
 hi SignColumn ctermfg=none ctermbg=none
+hi Search ctermfg=cyan ctermbg=blue
+hi Folded ctermfg=darkgray ctermbg=none
+hi Statement ctermfg=darkblue
+hi Identifier ctermfg=white
+hi Constant ctermfg=darkgreen
+hi Comment ctermfg=darkblue
 
 "
 " syntastic
