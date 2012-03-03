@@ -49,3 +49,7 @@ if has("windows")
 	nmap <TAB> :tabn<CR>
 	nmap <S-TAB> :tabp<CR>
 endif
+
+if has("multi_byte")
+	set fileencodings=utf-8,ucs-bom,cp949
+endif
