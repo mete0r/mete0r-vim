@@ -28,8 +28,10 @@ endif
 
 if has("extra_search")
 	set hlsearch
-	" 노말모드에서 <ESC>로 하일라이팅 해제
-	nmap <ESC> :nohlsearch<CR>
+	" 노말모드에서 <ESC> 두 번으로 하일라이팅 해제
+	" (두 번으로 한 이유: <ESC> 한번으로 하면 터미널에서 특수키 시작코드와
+	" 충돌한다)
+	nmap <ESC><ESC> :nohlsearch<CR>
 endif
 
 if has("windows")
