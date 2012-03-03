@@ -1,27 +1,9 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-"
-" ui coloring
-"
-hi Normal ctermfg=gray
-hi SignColumn ctermfg=none ctermbg=none
-hi Search ctermfg=cyan ctermbg=blue
-hi Folded ctermfg=darkgray ctermbg=none
-hi StatusLine cterm=none ctermfg=white ctermbg=black
-hi StatusLineNC cterm=none ctermfg=gray ctermbg=black
-hi StatusLineError ctermfg=red ctermbg=black
-
 filetype plugin indent on
-
-"
-" syntax coloring
-"
 syntax on
-hi Statement ctermfg=darkblue
-hi Identifier ctermfg=white
-hi Constant ctermfg=darkgreen
-hi Comment ctermfg=darkblue
+colorscheme night
 
 "
 " syntastic
@@ -46,7 +28,7 @@ endif
 if has("extra_search")
 	set hlsearch
 	" 노말모드에서 <ESC>로 하일라이팅 해제
-	nmap <ESC> :nohlsearch<ENTER>
+	nmap <ESC> :nohlsearch<CR>
 endif
 
 if has("windows")
