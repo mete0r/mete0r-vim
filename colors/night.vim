@@ -15,8 +15,8 @@ hi TabLineSel cterm=none ctermfg=white ctermbg=darkblue
 hi StatusLine cterm=none ctermfg=white ctermbg=black
 hi StatusLineNC cterm=none ctermfg=gray ctermbg=black
 hi StatusLineError ctermfg=red ctermbg=black
+hi NoCoverage cterm=none ctermfg=darkyellow ctermbg=black
 hi Statement ctermfg=darkblue
 hi Identifier ctermfg=white
 hi Constant ctermfg=darkgreen
 hi Comment ctermfg=darkblue
-
