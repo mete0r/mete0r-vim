@@ -37,6 +37,11 @@ endif
 if has("windows")
 	nmap <TAB> :tabn<CR>
 	nmap <S-TAB> :tabp<CR>
+
+	" fugitive shortcuts
+	nmap <F1><F1> :Gstatus<CR>
+	nmap <F1><F2> :Git diff %<CR>
+	nmap <F1><F3> :Gdiff HEAD<CR>
 endif
 
 if has("multi_byte")
