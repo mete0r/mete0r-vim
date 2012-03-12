@@ -15,6 +15,9 @@ hi TabLineSel cterm=none ctermfg=white ctermbg=darkblue
 hi StatusLine cterm=none ctermfg=white ctermbg=black
 hi StatusLineNC cterm=none ctermfg=gray ctermbg=black
 hi StatusLineError ctermfg=red ctermbg=black
+hi DiffAdd cterm=bold
+hi DiffChange cterm=bold
+hi DiffDelete ctermfg=0 ctermbg=0
 hi NoCoverage cterm=none ctermfg=darkyellow ctermbg=black
 hi Statement ctermfg=darkblue
 hi Identifier ctermfg=white
