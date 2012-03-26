@@ -45,6 +45,11 @@ if has("windows")
 	nmap <F1><F3><F3> :Gdiff HEAD<CR>
 endif
 
+if has("quickfix")
+	nmap <C-n> :cn<CR>
+	nmap <C-p> :cp<CR>
+endif
+
 if has("multi_byte")
 	set fileencodings=utf-8,ucs-bom,cp949
 endif
