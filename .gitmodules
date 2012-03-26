@@ -10,3 +10,6 @@
 [submodule "bundle/pydoc.vim"]
 	path = bundle/pydoc.vim
 	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
