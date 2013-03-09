@@ -1,16 +1,17 @@
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+let g:vundle_default_git_proto = 'git'
+
+Bundle 'tpope/vim-pathogen'
+Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
+Bundle 'vim-flake8'
+
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-pathogen'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-flake8'
 
 filetype plugin indent on
 syntax on
