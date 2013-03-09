@@ -3,9 +3,33 @@ call vundle#rc()
 let g:vundle_default_git_proto = 'git'
 
 Bundle 'tpope/vim-pathogen'
+
+" Git
 Bundle 'tpope/vim-fugitive'
+
+" syntax files
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-git'
+Bundle 'vim-scripts/vim-javascript'
+Bundle 'vim-scripts/vim-json-bundle'
+
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-flake8'
+Bundle 'py-coverage'
+
+" Experimental stuffs
+"
+" Unlink, etc.
+Bundle 'tpope/vim-eunuch'
+" Seek: s<c1><c2> (like f<c1>)
+Bundle 'vim-scripts/vim-seek'
+" Automatic adjust shiftwidth and expandtab
+Bundle 'tpope/vim-sleuth'
+" make tables. try \tt
+Bundle 'Stormherz/tablify'
+" :help gitlog
+Bundle 'vim-scripts/git-log'
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
