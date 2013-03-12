@@ -6,6 +6,7 @@ Bundle 'tpope/vim-pathogen'
 
 " Git
 Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " syntax files
 Bundle 'tpope/vim-markdown'
