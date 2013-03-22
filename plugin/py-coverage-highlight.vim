@@ -28,9 +28,7 @@ if !has("python")
     finish
 endif
 
-hi NoCoverage ctermbg=gray guibg=#ffcccc
-hi SignColumn guibg=white ctermbg=NONE
-sign define NoCoverage text=>> texthl=NoCoverage linehl=NoCoverage
+sign define NoCoverage text=## texthl=NoCoverage linehl=NoCoverage
 
 function! HiglightCoverage(filename)
     sign unplace *
