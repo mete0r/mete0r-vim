@@ -45,7 +45,7 @@ colorscheme night
 "
 " syntastic
 "
-let g:syntastic_python_checker = 'pyflakes'
+let g:syntastic_python_checker = 'flake8'
 let g:syntastic_check_on_open = 1
 let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
 
