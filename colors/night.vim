@@ -18,7 +18,7 @@ hi StatusLineError ctermfg=red ctermbg=black
 hi DiffAdd cterm=bold
 hi DiffChange cterm=bold
 hi DiffDelete ctermfg=0 ctermbg=0
-hi NoCoverage cterm=none ctermfg=darkyellow ctermbg=black
+hi NoCoverage cterm=none ctermfg=none ctermbg=black
 hi Statement ctermfg=darkblue
 hi Identifier ctermfg=white
 hi Constant ctermfg=darkgreen
