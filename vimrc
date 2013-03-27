@@ -23,8 +23,6 @@ Bundle 'py-coverage'
 "
 " Unlink, etc.
 Bundle 'tpope/vim-eunuch'
-" Seek: s<c1><c2> (like f<c1>)
-Bundle 'vim-scripts/vim-seek'
 " Automatic adjust shiftwidth and expandtab
 Bundle 'tpope/vim-sleuth'
 " make tables. try \tt
