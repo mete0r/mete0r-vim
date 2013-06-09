@@ -88,3 +88,5 @@ endif
 if has("multi_byte")
 	set fileencodings=utf-8,ucs-bom,cp949
 endif
+
+au FileType xml set sw=2 sts=2 et
