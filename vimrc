@@ -1,6 +1,8 @@
-set rtp+=~/.vim/vundle/
+set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 let g:vundle_default_git_proto = 'git'
+
+Bundle 'gmarik/vundle'
 
 " Git
 Bundle 'tpope/vim-fugitive'
