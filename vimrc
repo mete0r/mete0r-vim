@@ -2,8 +2,6 @@ set rtp+=~/.vim/vundle/
 call vundle#rc()
 let g:vundle_default_git_proto = 'git'
 
-Bundle 'tpope/vim-pathogen'
-
 " Git
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
@@ -29,11 +27,6 @@ Bundle 'tpope/vim-sleuth'
 Bundle 'Stormherz/tablify'
 " :help gitlog
 Bundle 'vim-scripts/git-log'
-
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-if exists("g:loaded_pathogen") || &cp
-  call pathogen#infect()
-endif
 
 set nocompatible
 filetype off
