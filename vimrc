@@ -31,7 +31,9 @@ Bundle 'Stormherz/tablify'
 Bundle 'vim-scripts/git-log'
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+if exists("g:loaded_pathogen") || &cp
+  call pathogen#infect()
+endif
 
 set nocompatible
 filetype off
