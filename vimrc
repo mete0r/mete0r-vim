@@ -82,6 +82,9 @@ if has("quickfix")
 	nmap <C-p> :cp<CR>
 endif
 
+nmap <F1> <nop>
+imap <F1> <nop>
+
 if has("multi_byte")
 	set fileencodings=utf-8,ucs-bom,cp949
 endif
