@@ -84,6 +84,9 @@ endif
 
 nmap <F1> <nop>
 imap <F1> <nop>
+nmap <C-A> GV1G
+vmap <C-C> :!xsel -ib<ENTER>u
+nmap <C-V> :r!xsel -ob<ENTER>
 
 if has("multi_byte")
 	set fileencodings=utf-8,ucs-bom,cp949
