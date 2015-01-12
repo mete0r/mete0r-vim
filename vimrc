@@ -30,6 +30,9 @@ Bundle 'Stormherz/tablify'
 " :help gitlog
 Bundle 'vim-scripts/git-log'
 
+Bundle 'bling/vim-airline'
+Bundle 'editorconfig/editorconfig-vim'
+
 set nocompatible
 filetype off
 
