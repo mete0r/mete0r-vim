@@ -43,7 +43,7 @@ colorscheme night
 "
 " syntastic
 "
-let g:syntastic_python_checker = 'pylama'
+let g:syntastic_python_checkers = ['pylama']
 let g:syntastic_check_on_open = 1
 let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
 
