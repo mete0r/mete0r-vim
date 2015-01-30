@@ -34,6 +34,8 @@ Bundle 'bling/vim-airline'
 Bundle 'editorconfig/editorconfig-vim'
 
 set nocompatible
+set exrc
+set secure
 filetype off
 
 filetype plugin indent on
@@ -96,3 +98,4 @@ if has("multi_byte")
 endif
 
 au FileType xml set sw=2 sts=2 et
+au FileType html set sw=2 sts=2 et
