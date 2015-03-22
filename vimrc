@@ -100,3 +100,27 @@ endif
 
 au FileType xml set sw=2 sts=2 et
 au FileType html set sw=2 sts=2 et
+
+
+let g:netrw_browse_split = 3
+let g:netrw_winsize = -28
+let g:netrw_liststype = 3
+" Toggle Vexplore with Ctrl-E
+function! ToggleVExplorer()
+	if exists("g:expl_buf_num")
+		call CloseVExplorer()
+	else
+		Vexplore
+		let g:expl_buf_num = bufnr("%")
+	endif
+endfunction
+function! CloseVExplorer()
+	if exists("g:expl_buf_num")
+		if bufloaded(g:expl_buf_num)
+			exec 'bd ' . g:expl_buf_num
+		endif
+		unlet g:expl_buf_num
+	endif
+endfunction
+au TabEnter * call CloseVExplorer()
+map <silent> <C-E> :call ToggleVExplorer()<CR>
