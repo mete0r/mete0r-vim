@@ -100,6 +100,8 @@ endif
 
 au FileType xml set sw=2 sts=2 et
 au FileType html set sw=2 sts=2 et
+au FileType vim set sw=8 sts=8 noet
+au FileType vim map <buffer> <F5> :source %<ENTER>
 
 
 let g:netrw_browse_split = 3
