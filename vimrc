@@ -15,6 +15,7 @@ Bundle 'tpope/vim-git'
 Bundle 'vim-scripts/vim-javascript'
 Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'guns/vim-clojure-static'
+Bundle 'mxw/vim-jsx'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-flake8'
