@@ -16,6 +16,7 @@ Bundle 'vim-scripts/vim-javascript'
 Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'guns/vim-clojure-static'
 Bundle 'mxw/vim-jsx'
+Bundle 'Rykka/riv.vim'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-flake8'
@@ -47,6 +48,7 @@ colorscheme night
 "
 " syntastic
 "
+let g:syntastic_rst_checkers = ['rstcheck']
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checkers = ['pylama']
 let g:syntastic_check_on_open = 1
