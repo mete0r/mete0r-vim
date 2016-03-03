@@ -49,7 +49,8 @@ colorscheme night
 " syntastic
 "
 let g:syntastic_rst_checkers = ['rstcheck']
-let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_python_checkers = ['pylama']
 let g:syntastic_check_on_open = 1
 let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
