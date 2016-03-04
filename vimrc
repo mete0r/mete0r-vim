@@ -55,7 +55,10 @@ let g:syntastic_rst_checkers = ['rstcheck']
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_json_checkers = ['jsonlint']
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_stl_format='%E{ Errors:%e}%W{ Warns:%w} at %F'
 
 "
@@ -77,7 +80,9 @@ if has("extra_search")
 	" 노말모드에서 <ESC> 두 번으로 하일라이팅 해제
 	" (두 번으로 한 이유: <ESC> 한번으로 하면 터미널에서 특수키 시작코드와
 	" 충돌한다)
-	nmap <ESC><ESC> :nohlsearch<CR>
+	nmap <ESC><ESC> :nohlsearch<CR>:SyntasticReset<CR>
+else
+	nmap <ESC><ESC> :SyntasticReset<CR>
 endif
 
 if has("windows")
