@@ -17,6 +17,7 @@ Bundle 'vim-scripts/vim-json-bundle'
 Bundle 'guns/vim-clojure-static'
 Bundle 'mxw/vim-jsx'
 Bundle 'Rykka/riv.vim'
+Bundle 'elzr/vim-json'
 
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-flake8'
