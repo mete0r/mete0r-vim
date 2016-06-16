@@ -1,46 +1,47 @@
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-let g:vundle_default_git_proto = 'git'
-
-Bundle 'gmarik/vundle'
-
-" Git
-Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
-
-" syntax files
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-git'
-Bundle 'vim-scripts/vim-javascript'
-Bundle 'vim-scripts/vim-json-bundle'
-Bundle 'guns/vim-clojure-static'
-Bundle 'mxw/vim-jsx'
-Bundle 'Rykka/riv.vim'
-Bundle 'elzr/vim-json'
-
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-flake8'
-Bundle 'py-coverage'
-
-" Experimental stuffs
-"
-" Unlink, etc.
-Bundle 'tpope/vim-eunuch'
-" Automatic adjust shiftwidth and expandtab
-Bundle 'tpope/vim-sleuth'
-" make tables. try \tt
-Bundle 'Stormherz/tablify'
-" :help gitlog
-Bundle 'vim-scripts/git-log'
-
-Bundle 'bling/vim-airline'
-Bundle 'editorconfig/editorconfig-vim'
-
 set nocompatible
 set exrc
 set secure
 filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" Git
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+
+" syntax files
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-git'
+Plugin 'vim-scripts/vim-javascript'
+Plugin 'vim-scripts/vim-json-bundle'
+Plugin 'guns/vim-clojure-static'
+Plugin 'mxw/vim-jsx'
+Plugin 'Rykka/riv.vim'
+Plugin 'elzr/vim-json'
+
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-flake8'
+Plugin 'py-coverage'
+
+" Experimental stuffs
+"
+" Unlink, etc.
+Plugin 'tpope/vim-eunuch'
+" Automatic adjust shiftwidth and expandtab
+Plugin 'tpope/vim-sleuth'
+" make tables. try \tt
+Plugin 'Stormherz/tablify'
+" :help gitlog
+Plugin 'vim-scripts/git-log'
+
+Plugin 'bling/vim-airline'
+Plugin 'editorconfig/editorconfig-vim'
+
+call vundle#end()
 
 filetype plugin indent on
 syntax on
