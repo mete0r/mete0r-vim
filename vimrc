@@ -136,3 +136,13 @@ function! CloseVExplorer()
 endfunction
 au TabEnter * call CloseVExplorer()
 map <silent> <C-E> :call ToggleVExplorer()<CR>
+
+"
+" Riv settings
+"
+" Use folding
+let g:riv_disable_folding = 0
+" Fold sections only
+let g:riv_fold_level = 1
+" Do not map <Tab>, <S-Tab> in normal mode
+let g:riv_ignored_nmaps = "<Tab>,<S-Tab>"
