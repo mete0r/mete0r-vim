@@ -25,3 +25,6 @@ hi Type cterm=bold ctermfg=5
 hi Visual ctermbg=lightcyan
 hi link pythonBuiltin Statement
 hi pythonDecorator ctermfg=lightgreen
+
+hi link htmlTag Normal
+hi link htmlEndTag Normal
