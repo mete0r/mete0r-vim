@@ -40,6 +40,7 @@ Plugin 'vim-scripts/git-log'
 
 Plugin 'bling/vim-airline'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'kovisoft/slimv'
 
 call vundle#end()
 
