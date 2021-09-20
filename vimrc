@@ -90,7 +90,7 @@ if has("windows")
 	nmap <S-TAB> :tabp<CR>
 
 	" fugitive shortcuts
-	nmap <F1><F1> :Gstatus<CR>
+	nmap <F1><F1> :Git<CR>
 	nmap <F1><F2> :Git diff<CR>
 	nmap <F1><F3> :Git diff %<CR>
 	nmap <F1><F3><F3> :Gdiff HEAD<CR>
