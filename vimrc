@@ -46,7 +46,7 @@ call vundle#end()
 
 filetype plugin indent on
 syntax on
-colorscheme night
+colorscheme november
 
 "
 " syntastic
